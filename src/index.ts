@@ -12,3 +12,10 @@ function render(document: any) {
 
 let numbers: number[] = []
 numbers.forEach(n => n.toString)
+
+// Tuple
+/// A fixed length array where each element has a particular type
+let user: [number, string] = [1, 'Mosh']
+user[0].toFixed
+user[1].charAt
+user.push(1)
