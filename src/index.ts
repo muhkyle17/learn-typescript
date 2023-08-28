@@ -49,13 +49,15 @@ function calculateTax(income: number, taxYear = 2022): number {
 
 calculateTax(10_000, 2023)
 
-// Objects
-let employee: {
+// Objects && Type aliases
+type Employee = {
   readonly id: number
   name: string
   faxMachine?: string
   retire: (date: Date) => void
-} = {
+}
+
+let employee: Employee = {
   id: 1,
   name: '',
   retire: (date: Date) => {
